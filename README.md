@@ -22,6 +22,11 @@ MealsBuddy es una aplicación web que te ayuda a llevar un control de tus comida
 4. Acceder a `http://localhost:4200/`
 
 
+## Remix
+
+# Creación app
+Al crear con ´npx create-remix@latest´ se crea con TS, para hacerlo con JS ´npx create-remix@latest --template remix-run/remix/templates/remix-javascript
+´ lo cual se encuentra a sección Guides>Templates en la documentación
 ## Deployment
 
 First, build your app for production:

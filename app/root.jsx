@@ -6,8 +6,7 @@ import {
   ScrollRestoration,
 } from "@remix-run/react";
 
-import style from "./tailwind.css";
-import PropTypes from "prop-types";
+import "./tailwind.css";
 
 export const links = () => [
   { rel: "preconnect", href: "https://fonts.googleapis.com" },
@@ -20,7 +19,6 @@ export const links = () => [
     rel: "stylesheet",
     href: "https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap",
   },
-  { rel: "stylesheet", href: style },
 ];
 
 export function Layout({ children }) {
@@ -41,11 +39,6 @@ export function Layout({ children }) {
   );
 }
 
-Layout.propTypes = {
-  children: PropTypes.node.isRequired,
-};
-
 export default function App() {
-
   return <Outlet />;
 }
